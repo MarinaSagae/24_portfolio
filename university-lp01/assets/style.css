@@ -68,19 +68,10 @@ body {
 }
 
 .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
@@ -88,8 +79,7 @@ body {
   position: absolute;
   bottom: 43%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   width: 4vw;
 }
 @media screen and (max-width: 750px) {
@@ -105,22 +95,10 @@ body {
   background-color: #000000;
 }
 .border.is-border::before {
-  -webkit-animation-name: border_anim;
-          animation-name: border_anim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: border_anim;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   width: 100%;
-}
-
-@-webkit-keyframes border_anim {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 @keyframes border_anim {
@@ -193,15 +171,12 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .hover-btn:hover::before {
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-  -webkit-transform: skewX(-45deg) translateX(0);
-          transform: skewX(-45deg) translateX(0);
+  transform-origin: top right;
+  transform: skewX(-45deg) translateX(0);
 }
 
 .hover-btn:hover {
@@ -224,11 +199,8 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transform: skewX(-45deg) translateX(-100%);
-          transform: skewX(-45deg) translateX(-100%);
-  -webkit-transition: inherit;
+  transform-origin: top left;
+  transform: skewX(-45deg) translateX(-100%);
   transition: inherit;
 }
 
@@ -275,15 +247,12 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .hover-btn02:hover::before {
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-  -webkit-transform: skewX(-45deg) translateX(0);
-          transform: skewX(-45deg) translateX(0);
+  transform-origin: top right;
+  transform: skewX(-45deg) translateX(0);
 }
 
 .hover-btn02:hover {
@@ -319,22 +288,15 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transform: skewX(-45deg) translateX(-100%);
-          transform: skewX(-45deg) translateX(-100%);
-  -webkit-transition: inherit;
+  transform-origin: top left;
+  transform: skewX(-45deg) translateX(-100%);
   transition: inherit;
 }
 
 .head {
   padding: 1vw 0 1vw 2vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 @media screen and (max-width: 750px) {
   .head {
@@ -342,12 +304,8 @@ body {
   }
 }
 .head__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .head__logo figcaption {
   margin-left: 10px;
@@ -364,8 +322,7 @@ body {
   font-weight: bold;
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
 @media screen and (max-width: 750px) {
   .head__ttl {
@@ -406,8 +363,7 @@ body {
   position: absolute;
   top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   margin-left: -2vw;
 }
 @media screen and (max-width: 750px) {
@@ -415,28 +371,17 @@ body {
     top: 30%;
     left: 10%;
     margin-left: 0;
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
+    transform: translate(0%);
   }
 }
 .kv__subTtl img {
   width: 505px;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
+  animation-duration: 6s;
+  animation-name: fadeIn;
 }
 @media screen and (max-width: 750px) {
   .kv__subTtl img {
     width: 48vw;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -452,8 +397,7 @@ body {
   position: absolute;
   top: 31%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
 @media screen and (max-width: 750px) {
   .kv__txt {
@@ -461,8 +405,7 @@ body {
     top: 40%;
     left: 0;
     right: 0;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
     text-align: center;
   }
 }
@@ -474,8 +417,7 @@ body {
   position: absolute;
   top: 44%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
 @media screen and (max-width: 750px) {
   .kv__ttl {
@@ -491,8 +433,7 @@ body {
   position: absolute;
   top: 53%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
 @media screen and (max-width: 750px) {
   .kv__ttl2 {
@@ -517,9 +458,7 @@ body {
   display: inline;
   font-size: 1rem;
   line-height: 2rem;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   color: #000000;
   position: absolute;
   bottom: 10vw;
@@ -545,23 +484,13 @@ body {
   bottom: 0;
   right: -0.35vw;
   z-index: 10;
-  -webkit-animation: circleMove 1.6s ease-in-out infinite;
-          animation: circleMove 1.6s ease-in-out infinite;
+  animation: circleMove 1.6s ease-in-out infinite;
 }
 @media screen and (max-width: 750px) {
   .scrollDown::before {
     width: 1.8vw;
     height: 1.8vw;
     right: -0.8vw;
-  }
-}
-
-@-webkit-keyframes circleMove {
-  0% {
-    bottom: 9.5vw;
-  }
-  100% {
-    bottom: -0.4vw;
   }
 }
 
@@ -574,14 +503,6 @@ body {
   }
 }
 @media screen and (max-width: 750px) {
-  @-webkit-keyframes circleMove {
-    0% {
-      bottom: 19vw;
-    }
-    100% {
-      bottom: -0.4vw;
-    }
-  }
   @keyframes circleMove {
     0% {
       bottom: 19vw;
@@ -634,8 +555,7 @@ body {
   position: absolute;
   bottom: 43%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   width: 4vw;
 }
 @media screen and (max-width: 750px) {
@@ -651,23 +571,16 @@ body {
   background-color: #FFFFFF;
 }
 .schedule .border.is-border::before {
-  -webkit-animation-name: border_anim;
-          animation-name: border_anim;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: border_anim;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   width: 100%;
 }
 .schedule__select {
   margin: 5vw auto 7vw auto;
   width: 67vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 @media screen and (max-width: 750px) {
   .schedule__select {
@@ -714,12 +627,8 @@ body {
 }
 .schedule__day {
   margin: 2vw 0 3vw 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 @media screen and (max-width: 750px) {
   .schedule__day {
@@ -809,12 +718,8 @@ body {
 .join__inner {
   margin: 5vw auto 0 auto;
   width: calc(100% - 32vw);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 @media screen and (max-width: 750px) {
   .join__inner {
@@ -874,12 +779,8 @@ body {
 .point__inner {
   margin: 3vw auto 0 auto;
   width: calc(100% - 11vw);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 @media screen and (max-width: 750px) {
   .point__inner {
@@ -1149,13 +1050,8 @@ body {
   .time__inner {
     margin: 15vw auto 0;
     padding: 0 15vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     position: initial;
   }
 }
@@ -1169,8 +1065,7 @@ body {
   overflow: hidden;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
 }
 .time .img01 {
@@ -1190,8 +1085,7 @@ body {
   overflow: hidden;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
 }
 .time__img-sp > img {
@@ -1222,12 +1116,8 @@ body {
 .time__day {
   margin: 0 auto;
   width: 15vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 @media screen and (max-width: 750px) {
   .time__day {
@@ -1498,12 +1388,8 @@ body {
 .foot__site {
   margin: 5vw auto 0 auto;
   width: 25vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 @media screen and (max-width: 750px) {
   .foot__site {

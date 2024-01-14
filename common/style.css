@@ -509,11 +509,24 @@ body {
 .intro__wrap {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(180deg, rgb(0, 107, 62) 0%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(45deg, #0766AD, #29ADB2, #C5E898, #F3F3F3);
+  background-size: 200% 200%;
+  animation: kf-bg 20s ease infinite;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
+}
+@keyframes kf-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .intro__txt {
   text-align: center;
